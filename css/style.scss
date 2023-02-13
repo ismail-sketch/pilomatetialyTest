@@ -377,44 +377,46 @@ main {
     color: $blackColor;
     text-transform: uppercase;
     position: relative;
+    color: #e99517;
   }
 
-  .sub-menu {
-        position: absolute;
-        z-index: 1;
-        background-color: #fff;
-        box-shadow: -1px 4px 14px 0px rgba(34, 60, 80, 0.08);
-        max-height: 0;
-        overflow: hidden;
-        transition: all .3s;
-        padding: 0 10px;
-        list-style: none;
+  // .sub-menu {
+  //       position: absolute;
+  //       z-index: 1;
+  //       background-color: #fff;
+  //       box-shadow: -1px 4px 14px 0px rgba(34, 60, 80, 0.08);
+  //       max-height: 0;
+  //       overflow: hidden;
+  //       transition: all .3s;
+  //       padding: 0 10px;
+  //       list-style: none;
 
-        &.active {
-            height: auto;
-            padding: 20px 10px;
-            max-height: 700px;
-        }
-        .menu__item {
-            margin-bottom: 7px;
-            line-height: 1.2;
-            border-bottom: 1px solid #b0b0b0;
-            padding-bottom: 7px;
-            margin-right: 0;
-            list-style: none !important;
-            &::marker {
-              display: none !important;
-              position: absolute;
-              background-color: #fff;
+  //       &.active {
+  //           height: auto;
+  //           padding: 20px 10px;
+  //           max-height: 700px;
+  //       }
+  //       .menu__item {
+  //           margin-bottom: 7px;
+  //           line-height: 1.2;
+  //           border-bottom: 1px solid #b0b0b0;
+  //           padding-bottom: 7px;
+  //           margin-right: 0;
+  //           list-style: none !important;
+  //           &::marker {
+  //             display: none !important;
+  //             position: absolute;
+  //             background-color: #fff;
 
-            }
-            a {
-                font-size: 16px;
-            }
-        }
-    }
+  //           }
+  //           a {
+  //               font-size: 16px;
+  //           }
+  //       }
+  //   }
 
     .menu__item {
+
         @media(any-hover: hover) {
             &:hover {
                 .sub-menu {
