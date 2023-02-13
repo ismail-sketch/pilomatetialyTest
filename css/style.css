@@ -436,6 +436,7 @@ main {
   .menu-list-desk:hover .sub-menu {
     max-height: 700px;
     padding-top: 20px;
+    padding-bottom: 10px;
   }
 }
 
@@ -455,13 +456,18 @@ main {
   transition: all .3s;
   padding: 0 10px;
   list-style: none;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.09);
+          box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.09);
+  width: 350px;
 }
 
 .sub-menu.active {
   max-height: 700px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
-.sub-menu .menu__item {
+.sub-menu .menu__item:not(:last-child) {
   border-bottom: 1px solid #cccccc;
 }
 
@@ -484,6 +490,7 @@ main {
   width: -moz-max-content;
   width: max-content;
   border-radius: 0;
+  line-height: 1.2;
 }
 
 .menu__item a {

@@ -362,6 +362,7 @@ main {
       .sub-menu {
         max-height: 700px;
         padding-top: 20px;
+        padding-bottom: 10px;
       }
 
     }
@@ -386,11 +387,18 @@ main {
   transition: all .3s;
   padding: 0 10px;
   list-style: none;
+  box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.09);
+  width: 350px;
+
   &.active {
     max-height: 700px;
+    padding-bottom: 10px;
+    padding-top: 20px;
   }
   .menu__item {
-    border-bottom: 1px solid #cccccc;
+    &:not(:last-child) {
+      border-bottom: 1px solid #cccccc;
+    }
     @media (any-hover: hover) {
       &:hover {
         background-color: #e7e7e7;
@@ -404,6 +412,7 @@ main {
     align-items: center;
     width: max-content;
     border-radius: 0;
+    line-height: 1.2;
   }
 }
 // ///////////////////////////////////////////////////
