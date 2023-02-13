@@ -32,21 +32,23 @@ window.addEventListener('click', (e) => {
 })
 
 // sub-menu=======================
-const subMenu = document.querySelectorAll('.sub-menu');
-const clickSubmenu = document.querySelectorAll('.click-submenu');
+const menuListMob = document.querySelector('.menu-list-mob');
+const suBmenuMob = document.querySelector('.sub-menu-mob');
+const suBmenuDesk = document.querySelector('.sub-menu-desk');
+const menuListDesk = document.querySelector('.menu-list-desk');
 
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent);
 
-clickSubmenu.forEach(item => {
-    if (isMobile) {
-        item.addEventListener('click', () => {
-            subMenu.forEach(menu => {
-                menu.classList.toggle('active');
-            })
-
-        })
-    }
-})
+if (isMobile) {
+    menuListMob.addEventListener('click', () => {
+        suBmenuDesk.classList.toggle('active');
+        suBmenuMob.classList.toggle('active');
+    })
+    menuListDesk.addEventListener('click', () => {
+        suBmenuMob.classList.toggle('active');
+        suBmenuDesk.classList.toggle('active');
+    })
+}
 
 
 // Перенос элементов меню при адаптиве

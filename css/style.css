@@ -427,13 +427,77 @@ main {
   }
 }
 
+@media (any-hover: hover) {
+  .menu-catalog-btn:hover {
+    background-color: #019001;
+    color: #fff;
+  }
+}
+
+.menu-list-desk {
+  position: relative;
+}
+
+@media (any-hover: hover) {
+  .menu-list-desk:hover .sub-menu {
+    max-height: 700px;
+    padding-top: 20px;
+  }
+}
+
+@media (any-hover: hover) {
+  .menu-list-desk a:hover {
+    color: #fff;
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  padding: 0 10px;
+  list-style: none;
+}
+
+.sub-menu.active {
+  max-height: 700px;
+}
+
+.sub-menu .menu__item {
+  border-bottom: 1px solid #cccccc;
+}
+
+@media (any-hover: hover) {
+  .sub-menu .menu__item:hover {
+    background-color: #e7e7e7;
+  }
+}
+
+.sub-menu .menu__item a {
+  color: #282828;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 0;
+}
+
 .menu__item a {
   font-size: 16px;
   font-weight: 500;
   color: #282828;
   width: 150px;
   height: 40px;
-  border-radius: 5px;
   -webkit-transition: all .3s;
   transition: all .3s;
   text-transform: uppercase;
@@ -446,14 +510,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid green;
-}
-
-@media (any-hover: hover) {
-  .menu__item a:hover {
-    background-color: green;
-    color: #fff;
-  }
+  border: 1px solid #019001;
 }
 
 /*SECTION MAIN========================*/
