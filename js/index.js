@@ -5,7 +5,11 @@ const headerContacts = document.querySelector('.header__contacts');
 const burgerSpan = document.querySelectorAll('.burger span');
 const menu = document.querySelector('.menu');
 const menuList = document.querySelector('.menu__list');
-const headerJobGraphic = document.querySelector('.header__job-graphic')
+
+const headerGraphic = document.querySelector('.header__graphic');
+const headerTel = document.querySelector('.header__tel');
+const menuCatalogBtn = document.querySelector('.menu-catalog-btn');
+const headerLogo = document.querySelector('.header__logo');
 
 
 
@@ -45,7 +49,32 @@ clickSubmenu.forEach(item => {
 })
 
 
+// Перенос элементов меню при адаптиве
+const headerVertine1 = document.querySelector('.header__vert-line1');
+const headerVertine2 = document.querySelector('.header__vert-line2');
+const ul = document.createElement('ul');
 
+function moveHeaderEl() {
+    if(window.innerWidth < 1110) {
+        menuList.insertAdjacentElement('beforeend', headerGraphic);
+        menuList.insertAdjacentElement('beforeend', headerTel);
+
+    } else {
+
+        headerLogo.insertAdjacentElement('afterend', headerVertine1);
+
+        headerLogo.insertAdjacentElement('afterend', headerTel);
+        headerLogo.insertAdjacentElement('afterend', headerGraphic);
+        headerGraphic.insertAdjacentElement('afterend', headerVertine2);
+
+    }
+}
+moveHeaderEl();
+
+
+window.addEventListener('resize',  () => {
+    moveHeaderEl();
+});
 
 // POPUP С ФОРМАМИ==================================
 const overlay = document.querySelector('.overlay');
