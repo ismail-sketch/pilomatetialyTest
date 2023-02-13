@@ -146,7 +146,6 @@ function checkInputTel() {
         currentFormBtn.addEventListener('click', (e) => {
             e.preventDefault();
             if(currentInput.value.length < 14) {
-                console.log(currentInput)
                 formErrorWindow.classList.add('active');
                 overlay2.classList.add('active');
             }
