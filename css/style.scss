@@ -331,21 +331,6 @@ main {
 .menu__item {
 }
 
-.menu__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-@media (max-width: 940px) {
-  .menu__item:not(:last-child) {
-    margin-right: 20px;
-  }
-}
-
-@media (max-width: 100px) {
-  .menu__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
 .menu-catalog-btn {
   @media (any-hover: hover) {
     &:hover {
@@ -388,7 +373,11 @@ main {
   padding: 0 10px;
   list-style: none;
   box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.09);
-  width: 350px;
+  width: 260px;
+  transform: translateX(-75px);
+  @media (max-width: 560px) {
+    transform: translateX(0);
+  }
 
   &.active {
     max-height: 700px;
@@ -409,8 +398,10 @@ main {
     color: $blackColor;
     border: none;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    width: max-content;
+    padding: 8px 0;
+    width: 100%;
     border-radius: 0;
     line-height: 1.2;
   }
