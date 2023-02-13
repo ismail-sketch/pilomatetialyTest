@@ -448,11 +448,6 @@ main {
   .menu.active {
     -webkit-transform: translateX(0);
   }
-  .menu:first-child.active {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
 }
 
 @media ((max-width: 1070px)) {
@@ -518,7 +513,6 @@ main {
   color: #282828;
   text-transform: uppercase;
   position: relative;
-  color: #e99517;
 }
 
 @media (any-hover: hover) {

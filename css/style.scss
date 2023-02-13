@@ -336,9 +336,9 @@ main {
     .menu.active {
       -webkit-transform: translateX(0);
     }
-    .menu:first-child.active {
-        justify-content: end;
-    }
+    // .menu:first-child.active {
+    //     justify-content: end;
+    // }
   }
 
   @media ((max-width: 1070px)) {
@@ -377,7 +377,7 @@ main {
     color: $blackColor;
     text-transform: uppercase;
     position: relative;
-    color: #e99517;
+    // color: #e99517;
   }
 
   // .sub-menu {
