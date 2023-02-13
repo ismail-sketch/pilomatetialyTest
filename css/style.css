@@ -413,24 +413,6 @@ main {
   transition: transform .3s, -webkit-transform .3s;
 }
 
-.triangle {
-  width: 0;
-  height: 0;
-  top: 6px;
-  right: -19px;
-  border-style: solid;
-  border-width: 8px 7px 0 7px;
-  position: absolute;
-  border-color: #5a5a5a transparent transparent transparent;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-
-.triangle.active {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-}
-
 @media ((max-width: 1070px)) {
   .menu {
     overflow: auto;

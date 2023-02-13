@@ -304,20 +304,20 @@ main {
     position: relative;
     transition: transform .3s;
   }
-  .triangle {
-    width: 0;
-    height: 0;
-    top: 6px;
-    right: -19px;
-    border-style: solid;
-    border-width: 8px 7px 0 7px;
-    position: absolute;
-    border-color: #5a5a5a transparent transparent transparent;
-    transition: all .5s;
-    &.active {
-        transform: rotate(-180deg);
-    }
-  }
+  // .triangle {
+  //   width: 0;
+  //   height: 0;
+  //   top: 6px;
+  //   right: -19px;
+  //   border-style: solid;
+  //   border-width: 8px 7px 0 7px;
+  //   position: absolute;
+  //   border-color: #5a5a5a transparent transparent transparent;
+  //   transition: all .5s;
+  //   &.active {
+  //       transform: rotate(-180deg);
+  //   }
+  // }
 
   @media ((max-width: 1070px)) {
     .menu {
