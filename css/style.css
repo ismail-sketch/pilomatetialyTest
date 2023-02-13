@@ -463,33 +463,9 @@ main {
 
 @media (max-width: 1070px) {
   .menu__list {
-    -webkit-column-gap: 15px;
-            column-gap: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     min-height: 100%;
     padding: 20px 0;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-
-@media (max-width: 560px) {
-  .menu__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    row-gap: 20px;
+    display: block;
   }
 }
 
