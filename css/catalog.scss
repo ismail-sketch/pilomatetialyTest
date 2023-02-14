@@ -481,11 +481,40 @@ $orangeColor: #FFA41E;
 .range-slider-filter {
     padding: 20px;
     padding-bottom: 30px;
-    font-size: 16px;
+    font-size: 16px;ee-title
     h3 {
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         // margin-bottom: 15px;
+    }
+}
+.catalog__free {
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(11, 163, 96, 0.27) 0.56%, rgba(41, 206, 154, 0.53) 95.5%);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 95%;
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+}
+.catalog__free-title {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: red;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    @include adaptiveAllCont('font-size', 22, 18, 1230, 320);
+}
+.catalog__free-list {
+    li {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        &:not(:last-child) {
+            margin-bottom: 7px;
+        }
     }
 }
 .inputs-wrp {
@@ -652,7 +681,7 @@ $orangeColor: #FFA41E;
         font-family: 'Roboto', sans-serif;
         font-weight: 600;
         @include adaptiveAllCont('font-size', 24, 20, 1230, 320);
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     &__prices-item {
         font-family: 'Roboto', sans-serif;

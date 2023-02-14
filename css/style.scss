@@ -416,6 +416,17 @@ main {
     line-height: 1.2;
   }
 }
+.menu-catalog-title {
+  display: flex;
+  width: 150px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #019001;
+  cursor: pointer;
+}
 // ///////////////////////////////////////////////////
 .menu__item a {
   font-size: 16px;

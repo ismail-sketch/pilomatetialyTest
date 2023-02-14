@@ -52,7 +52,7 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item menu-catalog-btn menu-list-desk">
-                                <a href="#">КАТАЛОГ</a>
+                                <span class="menu-catalog-title">КАТАЛОГ</span>
                                 <ul class="sub-menu sub-menu-desk">
                                     <li class="menu__item"><a href="catalog.html">Доска обрезная</a></li>
                                     <li class="menu__item"><a href="#">Брус обрезной</a></li>
@@ -71,7 +71,7 @@
                 </div>
                 <ul class="menu__list menu-list-mob">
                     <li class="menu__item menu-catalog-btn">
-                        <a href="#">КАТАЛОГ</a>
+                        <span class="menu-catalog-title">КАТАЛОГ</span>
                         <ul class="sub-menu sub-menu-mob">
                             <li class="menu__item"><a href="catalog.html">Доска обрезная</a></li>
                             <li class="menu__item"><a href="#">Брус обрезной</a></li>
@@ -215,6 +215,7 @@
             </div>
          </main>
 
+
          <footer class="footer">
             <div class="container">
                 <div class="footer__cont-wrp">
@@ -277,99 +278,101 @@
             </div>
          </footer>
 
-    <!-- ПОПАП С ФОРМАМИ --------------------------->
-            <div class="overlay">
-                <!--форма главного экрана -->
-                   <div class="form-wrp" data-modal="main">
-                    <span class="cross">&#10006;</span>
-                        <form class="form form__main" action="#">
-                            <img class="form__img" src="img/main/popup-img-1.jpg" alt="изображение">
+     <!-- ПОПАП С ФОРМАМИ --------------------------->
+     <div class="overlay">
+        <!--форма главного экрана -->
+           <div class="form-wrp" data-modal="main">
+            <span class="cross">&#10006;</span>
+                <form class="form form__main" action="#">
+                    <img class="form__img" src="img/main/popup-img-1.jpg" alt="изображение">
 
-                            <div class="form__cont-wrp">
-                                    <h3 class="form__title">Получите каталог всей нашей продукции</h3>
-                                    <span class="form__sub-title">Заполните форму и мы вышлем Вам актуальный каталог продукции с ценами</span>
-                                <label for="input__tel2">Введите номер телефона*</label>
-                                <input type="text" id="input__tel2" name="tel" class="input__tel input-tel">
+                    <div class="form__cont-wrp">
+                            <h3 class="form__title">Получите каталог всей нашей продукции</h3>
+                            <span class="form__sub-title">Заполните форму и мы вышлем Вам актуальный каталог продукции с ценами</span>
+                        <label for="input__tel">Введите номер телефона*</label>
+                        <input type="text" id="input__tel" name="tel" class="input__tel input-tel">
 
-                                <button type="submit" class="form__btn">Каталог продукции</button>
-                                <p class="form__pol-conf">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a></p>
-                            </div>
-                        </form>
-                   </div>
+                        <button type="submit" class="form__btn">Каталог продукции</button>
+                        <p class="form__pol-conf">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a></p>
+                    </div>
+                </form>
+           </div>
 
-                 <!--форма пиломатериалов -->
-               <div class="form-wrp" data-modal="pilomat">
-                <span class="cross">&#10006;</span>
-                     <form class="form form__pilomat" action="#">
-                        <img class="form__img" src="img/main/pilomat-form.png" alt="изображение">
+         <!--форма пиломатериалов -->
+       <div class="form-wrp" data-modal="pilomat">
+        <span class="cross">&#10006;</span>
+             <form class="form form__pilomat" action="#">
+                <img class="form__img" src="img/main/pilomat-form.png" alt="изображение">
 
-                        <div class="form__cont-wrp">
-                                <h3 class="form__title">Получите каталог пиломатериала с ценами</h3>
-                                <span class="form__sub-title">Заполните форму и мы вышлем Вам актуальный каталог продукции с ценами</span>
-                            <label for="input__tel3">Введите номер телефона*</label>
-                            <input type="text" id="input__tel3" name="tel" class="input__tel input-tel">
+                <div class="form__cont-wrp">
+                        <h3 class="form__title">Получите каталог пиломатериала с ценами</h3>
+                        <span class="form__sub-title">Заполните форму и мы вышлем Вам актуальный каталог продукции с ценами</span>
+                    <label for="input__tel">Введите номер телефона*</label>
+                    <input type="text" id="input__tel" name="tel" class="input__tel input-tel">
 
-                            <button type="submit" class="form__btn">Каталог продукции</button>
-                            <p class="form__pol-conf">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a></p>
-                        </div>
-                    </form>
-               </div>
-
-                 <!--форма погонажа -->
-               <div class="form-wrp" data-modal="pogonaj">
-                <span class="cross">&#10006;</span>
-                     <form class="form form__pilomat" action="#" >
-                        <img class="form__img" src="img/main/pogonaj-form.jpg" alt="изображение">
-
-                        <div class="form__cont-wrp">
-                                <h3 class="form__title">Получите каталог погонажа с ценами</h3>
-                                <span class="form__sub-title">Заполните форму и мы вышлем Вам актуальный каталог продукции с ценами</span>
-                            <label for="input__tel4">Введите номер телефона*</label>
-                            <input type="text" id="input__tel4" name="tel" class="input__tel input-tel">
-
-                            <button type="submit" class="form__btn">Каталог продукции</button>
-                            <p class="form__pol-conf">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a></p>
-                        </div>
-                    </form>
-               </div>
-
-                <!-- Форма баннера -->
-               <div class="form-wrp" data-modal="banner">
-                    <span class="cross">&#10006;</span>
-                    <form class="form form__pilomat form-banner" action="#">
-                        <div class="form__cont-wrp">
-                                <h3 class="form__title">Получите предложение</h3>
-                                <span class="form__sub-title">Заполните форму и мы вышлем Вам коммерческое предложение</span>
-                            <label for="input__tel5">Введите номер телефона*</label>
-                            <input type="text" id="input__tel5" name="tel" class="input__tel input-tel">
-
-                            <button type="submit" class="form__btn">Получить предложение</button>
-                            <p class="form__pol-conf">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a></p>
-                        </div>
-                        <!-- <img class="form__img" src="img/main/banner-modal.jpg" alt="изображение"> -->
-                        <div class="form__banner-img" style="background-image: url(img/main/banner-modal.jpg)"></div>
-                    </form>
-               </div>
-
-                <!--форма каталога -->
-                <div class="form-wrp" data-modal="catalog">
-                    <span class="cross">&#10006;</span>
-                            <form class="form form__pilomat" action="#" >
-                            <img class="form__img" src="img/catalog/catalog-form.jpg" alt="изображение">
-
-                            <div class="form__cont-wrp">
-                                    <h3 class="form__title">Закажите доставку прямо сейчас</h3>
-                                    <span class="form__sub-title">Заполните форму и мы Вам перезвоним для согласования деталей</span>
-                                <label for="input__tel4">Введите номер телефона*</label>
-                                <input type="text" id="input__tel4" name="tel" class="input__tel input-tel">
-
-                                <button type="submit" class="form__btn">Заказать звонок</button>
-                                <p class="form__pol-conf">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a></p>
-                            </div>
-                        </form>
+                    <button type="submit" class="form__btn">Каталог продукции</button>
+                    <p class="form__pol-conf">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a></p>
                 </div>
-            </div>
-        <!-- overlay -->
+            </form>
+       </div>
+
+         <!--форма погонажа -->
+       <div class="form-wrp" data-modal="pogonaj">
+        <span class="cross">&#10006;</span>
+             <form class="form form__pilomat" action="#" >
+                <img class="form__img" src="img/main/pogonaj-form.jpg" alt="изображение">
+
+                <div class="form__cont-wrp">
+                        <h3 class="form__title">Получите каталог погонажа с ценами</h3>
+                        <span class="form__sub-title">Заполните форму и мы вышлем Вам актуальный каталог продукции с ценами</span>
+                    <label for="input__tel">Введите номер телефона*</label>
+                    <input type="text" id="input__tel" name="tel" class="input__tel input-tel">
+
+                    <button type="submit" class="form__btn">Каталог продукции</button>
+                    <p class="form__pol-conf">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a></p>
+                </div>
+            </form>
+       </div>
+
+        <!-- Форма баннера -->
+       <div class="form-wrp" data-modal="banner">
+            <span class="cross">&#10006;</span>
+            <form class="form form__pilomat form-banner" action="#">
+                <div class="form__cont-wrp">
+                        <h3 class="form__title">Получите предложение</h3>
+                        <span class="form__sub-title">Заполните форму и мы вышлем Вам коммерческое предложение</span>
+                    <label for="input__tel">Введите номер телефона*</label>
+                    <input type="text" id="input__tel" name="tel" class="input__tel input-tel">
+
+                    <button type="submit" class="form__btn">Получить предложение</button>
+                    <p class="form__pol-conf">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a></p>
+                </div>
+                <!-- <img class="form__img" src="img/main/banner-modal.jpg" alt="изображение"> -->
+                <div class="form__banner-img" style="background-image: url(img/main/banner-modal.jpg)"></div>
+            </form>
+       </div>
+
+        <!--форма каталога -->
+      <div class="form-wrp" data-modal="catalog">
+        <span class="cross">&#10006;</span>
+                <form class="form form__pilomat" action="#" >
+                <img class="form__img" src="img/catalog/catalog-form.jpg" alt="изображение">
+
+                <div class="form__cont-wrp">
+                        <h3 class="form__title">Закажите доставку прямо сейчас</h3>
+                        <span class="form__sub-title">Заполните форму, и мы Вам перезвоним для согласования деталей</span>
+                    <label for="input__tel4">Введите номер телефона*</label>
+                    <input type="text" id="input__tel4" name="tel" class="input__tel input-tel">
+
+                    <label for="input__name6">Ваше имя</label>
+                    <input type="text" id="input__name6" name="name" class="input__name input-name">
+                    <button type="submit" class="form__btn">Заказать звонок</button>
+                    <p class="form__pol-conf">Нажимая на кнопку, вы даёте согласие на <a href="#">обработку персональных данных</a></p>
+                </div>
+            </form>
+    </div>
+    </div>
+<!-- overlay -->
 
         <!-- Окно успешной отправки -->
            <div class="overlay3">
