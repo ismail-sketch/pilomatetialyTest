@@ -72,6 +72,16 @@ main {
     font-weight: 900;
     @include adaptiveAllCont('font-size', 64, 24, 1230, 320);
 }
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  height: 50px;
+  background-color: transparent;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+  padding: 3px 10px;
+}
 /*------------------------------------------------*/
 
 .header {

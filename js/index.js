@@ -64,7 +64,6 @@ function moveHeaderEl() {
     } else {
 
         headerLogo.insertAdjacentElement('afterend', headerVertine1);
-
         headerLogo.insertAdjacentElement('afterend', headerTel);
         headerLogo.insertAdjacentElement('afterend', headerGraphic);
         headerGraphic.insertAdjacentElement('afterend', headerVertine2);
