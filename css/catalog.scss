@@ -440,6 +440,13 @@ $orangeColor: #FFA41E;
             }
         }
     }
+    &__price-title {
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        display: block;
+    }
     &__card-pm {
     }
     &__card-one {
@@ -637,6 +644,13 @@ $orangeColor: #FFA41E;
             margin-top: 15px;
         }
     }
+    &__price-title {
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        @include adaptiveAllCont('font-size', 24, 20, 1230, 320);
+        margin-bottom: 20px;
+    }
     &__prices-item {
         font-family: 'Roboto', sans-serif;
         font-size: 24px;
@@ -646,7 +660,7 @@ $orangeColor: #FFA41E;
             font-weight: 400;
         }
         &:not(:last-child) {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
     }
     &__instock {
@@ -656,6 +670,9 @@ $orangeColor: #FFA41E;
             color: #fff;
             font-family: 'Roboto', sans-serif;
             border-radius: 10px;
+            display: block;
+            width: 82px;
+            margin-top: 15px;
         }
         p {
             font-family: 'Roboto', sans-serif;

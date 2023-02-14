@@ -650,6 +650,14 @@
   margin-bottom: 10px;
 }
 
+.catalog__price-title {
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  display: block;
+}
+
 .catalog__card-btn {
   width: 150px;
   height: 45px !important;
@@ -917,6 +925,19 @@
   }
 }
 
+.cardBlock__price-title {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1230px) {
+  .cardBlock__price-title {
+    font-size: calc(20px + (4) * ((100vw - 320px) / (910)));
+  }
+}
+
 .cardBlock__prices-item {
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
@@ -934,7 +955,7 @@
 }
 
 .cardBlock__prices-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .cardBlock__instock span {
@@ -943,6 +964,9 @@
   color: #fff;
   font-family: 'Roboto', sans-serif;
   border-radius: 10px;
+  display: block;
+  width: 82px;
+  margin-top: 15px;
 }
 
 .cardBlock__instock p {
