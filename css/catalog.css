@@ -884,7 +884,7 @@
   display: flex;
   -webkit-column-gap: 40px;
           column-gap: 40px;
-  width: 70%;
+  width: 63%;
 }
 
 @media (max-width: 1235px) {
