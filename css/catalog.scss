@@ -638,6 +638,9 @@ $orangeColor: #FFA41E;
     }
 
     &__prices {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin-left: 70px;
         @media (max-width: 725px) {
             margin-left: 0;
@@ -691,6 +694,30 @@ $orangeColor: #FFA41E;
             background-color: #d7870d;
         }
     }
+    &__free {
+        margin-bottom: 23px;
+    }
+    &__free-title {
+        text-transform: uppercase;
+        color: red;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        @include adaptiveAllCont('font-size', 24, 20, 1230, 320);
+        font-weight: 600;
+        margin-bottom: 15px;
+        @media (max-width: 725px) {
+            margin-top: 20px;
+        }
+    }
+    &__free-list {
+        li {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
     &__goods-description {
         margin-top: 30px;
         p {
@@ -720,7 +747,6 @@ $orangeColor: #FFA41E;
         font-size: 24px;
         @include adaptiveAllCont('font-size', 24, 20, 1230, 320);
         font-weight: 600;
-        color: red;
         margin-bottom: 15px;
     }
     &__forfree-wrp {
@@ -734,7 +760,7 @@ $orangeColor: #FFA41E;
         }
     }
     &__forfree-item {
-        border: 3px solid #d6d6d6;
+        border: 3px solid #88a88f;
         border-radius: 10px;
         position: relative;
         flex: 0 1 23%;
@@ -755,22 +781,21 @@ $orangeColor: #FFA41E;
             margin: 0 auto;
         }
         img {
-            max-width: 50px;
-            height: auto;
+            width: auto;
+            height: 50px;
             margin: 0 auto;
         }
         h4 {
             font-family: 'Roboto', sans-serif;
             font-size: 20px;
             @include adaptiveAllCont('font-size', 20, 16, 1230, 320);
-            text-transform: uppercase;
             line-height: 1.2;
             font-weight: 500;
-            color: #5D8B53;
             text-align: center;
             margin-top: 10px;
         }
     }
+
 }
 /* КОНЕЦ CADRBLOCK-------------------------*/
 
@@ -779,6 +804,9 @@ $orangeColor: #FFA41E;
     max-width: 100%;
 	overflow: hidden;
 	margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     @media (max-width: 930px) {
         height: auto;
     }

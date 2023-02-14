@@ -106,7 +106,24 @@ function moveCards() {
 }
 moveCards();
 
+// Перемещение блока описания при адаптиве
+const cardBlockContWrp = document.querySelector('.cardBlock__cont-wrp');
+const slider = document.querySelector('.slider');
+const cardBlockDescription = document.querySelector('.cardBlock__goods-description');
 
+function moveBlockFree() {
+    if(window.innerWidth < 930) {
+        cardBlockContWrp.insertAdjacentElement('afterend', cardBlockDescription);
+    } else {
+        slider.insertAdjacentElement('beforeend', cardBlockDescription);
+    }
+}
+window.addEventListener('resize', moveBlockFree);
+moveBlockFree();
+
+
+
+// Слайдер карточки товара
 $(document).ready(function(){
 	$('.slider ul').bxSlider({
 		pagerCustom: '.slider_pager ul',

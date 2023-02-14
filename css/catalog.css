@@ -915,6 +915,16 @@
 }
 
 .cardBlock__prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: 70px;
 }
 
@@ -988,6 +998,40 @@
   background-color: #d7870d;
 }
 
+.cardBlock__free {
+  margin-bottom: 23px;
+}
+
+.cardBlock__free-title {
+  text-transform: uppercase;
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1230px) {
+  .cardBlock__free-title {
+    font-size: calc(20px + (4) * ((100vw - 320px) / (910)));
+  }
+}
+
+@media (max-width: 725px) {
+  .cardBlock__free-title {
+    margin-top: 20px;
+  }
+}
+
+.cardBlock__free-list li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.cardBlock__free-list li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
 .cardBlock__goods-description {
   margin-top: 30px;
 }
@@ -1020,7 +1064,6 @@
   font-family: 'Relaway', sans-serif;
   font-size: 24px;
   font-weight: 600;
-  color: red;
   margin-bottom: 15px;
 }
 
@@ -1052,7 +1095,7 @@
 }
 
 .cardBlock__forfree-item {
-  border: 3px solid #d6d6d6;
+  border: 3px solid #88a88f;
   border-radius: 10px;
   position: relative;
   -webkit-box-flex: 0;
@@ -1098,18 +1141,16 @@
 }
 
 .cardBlock__forfree-item img {
-  max-width: 50px;
-  height: auto;
+  width: auto;
+  height: 50px;
   margin: 0 auto;
 }
 
 .cardBlock__forfree-item h4 {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  text-transform: uppercase;
   line-height: 1.2;
   font-weight: 500;
-  color: #5D8B53;
   text-align: center;
   margin-top: 10px;
 }
@@ -1125,6 +1166,16 @@
   max-width: 100%;
   overflow: hidden;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 930px) {
