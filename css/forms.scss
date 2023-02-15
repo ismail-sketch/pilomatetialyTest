@@ -33,7 +33,7 @@ $orangeColor: #FFA41E;
     opacity: 1;
     visibility: visible;
 }
-.overlay2 {
+.overlay2, .overlay3, .overlay4 {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -46,8 +46,12 @@ $orangeColor: #FFA41E;
         display: block;
     }
 }
-.overlay3 {
+.overlay3, .overlay4 {
     display: none;
+
+    &.active {
+        display: block;
+    }
 }
 .form-wrp {
     position: relative;
@@ -215,7 +219,7 @@ $orangeColor: #FFA41E;
     position: relative;
     padding: 0px 10px 15px 10px;
     transition: all .3s;
-    display: none;
+    // display: none;
     @media(max-width: 515px) {
         width: 95%;
     }
@@ -278,7 +282,7 @@ $orangeColor: #FFA41E;
 }
 
 /*Окно ошибки----*/
-.form__error-window {
+.form__error-window, .form__error-send {
     width: 478px;
     height: 265px;
     background-color: #f27474;
@@ -301,6 +305,7 @@ $orangeColor: #FFA41E;
     }
 }
 
+
 @keyframes fErrAnim {
     0% {
         transform: scale(0.9);
@@ -322,7 +327,7 @@ $orangeColor: #FFA41E;
         pointer-events: visible;
     }
 }
-.form__error-cross {
+.form__error-cross, .form__error-send-cross{
     width: 95px;
     height: 95px;
     display: flex;
@@ -343,7 +348,8 @@ $orangeColor: #FFA41E;
         top: -12%;
     }
 }
-.form__error-title {
+
+.form__error-title, .form__error-send-title {
     font-size: 27px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
@@ -352,7 +358,7 @@ $orangeColor: #FFA41E;
     margin-bottom: 15px;
     @include adaptiveAllCont('font-size', 27, 22, 1230, 320);
 }
-.form__error-comment {
+.form__error-comment, .form__error-send-comment {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.3;
@@ -360,8 +366,10 @@ $orangeColor: #FFA41E;
     text-align: center;
     display: block;
 }
-
-.form__error-btn {
+.form__error-send-comment {
+    font-size: 20px;
+}
+.form__error-btn, .form__error-send-btn {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 50px;
@@ -379,3 +387,6 @@ $orangeColor: #FFA41E;
         height: 45px;
     }
 }
+
+
+

@@ -735,10 +735,10 @@ main {
   @include adaptiveAllCont('padding-top', 70, 10, 1230, 320);
   &__wrp {
     display: flex;
+    justify-content: center;
     gap: 20px;
     @media (max-width: 990px) {
       flex-wrap: wrap;
-      justify-content: center;
     }
     @media (max-width: 535px) {
       flex-direction: column;

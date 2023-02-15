@@ -80,7 +80,6 @@ window.addEventListener('resize',  () => {
 // POPUP С ФОРМАМИ==================================
 const overlay = document.querySelector('.overlay');
 const overlay2 = document.querySelector('.overlay2');
-const overlay3 = document.querySelector('.overlay3');
 const cross = document.querySelector('.cross');
 const popupBtns = document.querySelectorAll('.popup-btn');
 const formErrorWindow = document.querySelector('.form__error-window');
@@ -204,18 +203,66 @@ hideShowText3();
 
 // ОТПРАВКА ФОРМ НА ПОЧТУ
 
+// Всплытие окон "ошибка" или "спасибо"
+const overlay3 = document.querySelector('.overlay3');//Ошибка отправки
+const overlay4 = document.querySelector('.overlay4');//Успешная отправка
+const formSucsessCross = document.querySelector('.form__sucsess-cross');
+const formErrorSendCross = document.querySelector('.form__error-send-cross');
+const formErrorSend = document.querySelector('.form__error-send');
+const formErrorSendBtn = document.querySelector('.form__error-send-btn');
+
+
+function resultOfSubmit(overlay) {
+    overlay.classList.add('active');
+    overlay.addEventListener('click', (e) => {
+        if(!e.target.closest('.form__sucsess-window') && !e.target.closest('.form__error-send')) {
+            overlay.classList.remove('active');
+            formErrorSend.classList.remove('.active');
+        }
+    })
+}
+// Закрытие модалок оповещения
+formSucsessCross.addEventListener('click', () => {
+    overlay3.classList.remove('active');
+})
+if(formErrorSendCross !== null && formErrorSendBtn !== null) {
+    formErrorSendCross.addEventListener('click', () => {
+        overlay4.classList.remove('active');
+        formErrorSend.classList.remove('active');
+    })
+    formErrorSendBtn.addEventListener('click', () => {
+        overlay4.classList.remove('active');
+        formErrorSend.classList.remove('active');
+    })
+}
+
+//---------------------------------------------------------------------
+
 form.forEach(item => {
     const inputTel = item.querySelector('.input__tel');
-
     item.addEventListener('submit', (e) => {
         e.preventDefault();
         if(inputTel.value !== '') {
-           console.log('ok');
-        } else {
-            console.log('no');
+            formModalSend(item);
         }
     })
 })
+
+async function formModalSend(formModal) {
+    let formData = new FormData(formModal);
+    let respons = await fetch('sendmail.php', {
+        method: 'POST',
+        body: formData
+    });
+    if(respons.ok) {
+        resultOfSubmit(overlay3);
+        formModal.reset();
+    } else {
+        resultOfSubmit(overlay4);
+        formErrorSend.classList.add('active');
+    }
+}
+
 
 
 // Маска телефона
