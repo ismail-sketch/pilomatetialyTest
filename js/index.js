@@ -143,7 +143,6 @@ function checkInputTel() {
         const currentInput = item.querySelector('.input__tel');
 
         currentFormBtn.addEventListener('click', (e) => {
-            e.preventDefault();
             if(currentInput.value.length < 14) {
                 formErrorWindow.classList.add('active');
                 overlay2.classList.add('active');
@@ -203,6 +202,20 @@ function hideShowText3() {
 }
 hideShowText3();
 
+// ОТПРАВКА ФОРМ НА ПОЧТУ
+
+form.forEach(item => {
+    const inputTel = item.querySelector('.input__tel');
+
+    item.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if(inputTel.value !== '') {
+           console.log('ok');
+        } else {
+            console.log('no');
+        }
+    })
+})
 
 
 // Маска телефона
