@@ -108,6 +108,8 @@
                                 <li><a href="#">Рейка</a></li>
                                 <li><a href="#">Брусок</a></li>
                                 <li><a href="#">Террасная доска (импрегнированная)</a></li>
+                                <li><a href="#">Прочее</a></li>
+                                <li><a href="#">Услуги</a></li>
                             </ul>
 
                             <div class="range-slider-filter">
@@ -117,7 +119,7 @@
                                         <h3>Фильтр подбора</h3>
                                     </div>
                                 </div>
-                                <h3>Ширина мм</h3>
+                                <h3 class="filter-width-title">Ширина мм</h3>
                                 <div class="inputs-wrp">
                                     <span>от</span>
                                     <input id="input-price0" placeholder="100" min="100" max="200" class="input-price" type="number">
@@ -191,6 +193,7 @@
                             </div>
 
                         </div>
+
                         <div class="range-slider-filter range-slider-filter-mob">
                             <div class="catalog__sidebar-filter">
                                 <div class="catalog__sidebar-head-filter">
@@ -198,20 +201,20 @@
                                     <h3>Фильтр подбора</h3>
                                 </div>
                             </div>
-                            <div class="filter-for-show-hide">
-                                <h3>Ширина мм</h3>
-                                <div class="inputs-wrp">
-                                    <span>от</span>
-                                    <input id="input-price0" placeholder="100" min="100" max="200" class="input-price" type="number">
-                                    <span>до</span>
-                                    <input id="input-price1" placeholder="200" min="100" max="200" class="input-price" type="number">
+                                <div class="filter-for-show-hide">
+                                    <h4>Ширина мм</h4>
+                                    <div class="inputs-wrp">
+                                        <span>от</span>
+                                        <input id="input-price0" placeholder="100" min="100" max="200" class="input-price" type="number">
+                                        <span>до</span>
+                                        <input id="input-price1" placeholder="200" min="100" max="200" class="input-price" type="number">
+                                    </div>
+                                    <div class="rangeSlider"></div>
+                                    <div class="filter-btns-wrp">
+                                        <button class="show-results-btn">Показать</button>
+                                        <button class="reset-results-btn">Сбросить фильтр</button>
+                                    </div>
                                 </div>
-                                <div class="rangeSlider"></div>
-                                <div class="filter-btns-wrp">
-                                    <button class="show-results-btn">Показать</button>
-                                    <button class="reset-results-btn">Сбросить фильтр</button>
-                                </div>
-                            </div>
                         </div>
                         <div class="catalog__cont-right-filters">
                             <div class="catalog__sort">
@@ -237,9 +240,10 @@
 
                         <!-- Карточки товаров -->
                         <div class="catalog__cards-wrp">
+
                             <div class="catalog__card-item">
                                 <div class="catalog__cards-img-wrp">
-                                    <a href="card.html"><img src="img/catalog/card-img.jpg" alt="изображение"></a>
+                                    <img src="img/catalog/card-img.jpg" alt="изображение">
                                 </div>
 
                               <div class="catalog__card-text-wrp">
@@ -262,10 +266,14 @@
                                             <!-- <div class="catalog__card-m2">м2: <span>300 ₽</span></div> -->
                                        </div>
 
-                                        <button class="catalog__card-btn btn popup-btn" data-btn="catalog">Заказать</button>
+                                        <div class="catalog__card-btn-wrp">
+                                            <button class="catalog__card-btn btn popup-btn" data-btn="catalog">Заказать</button>
+                                        </div>
                                     </div>
                               </div>
+                              <a class="catalog__card-item-link" href="card.html"></a>
                             </div>
+
                             <div class="catalog__card-item">
                                 <div class="catalog__cards-img-wrp">
                                     <img src="img/catalog/card-img.jpg" alt="изображение">

@@ -429,7 +429,7 @@ main {
 
 @media (any-hover: hover) {
   .menu-catalog-btn:hover {
-    background-color: #019001;
+    background-color: #1d7441;
     color: #fff;
   }
 }
@@ -524,7 +524,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 3px solid #019001;
+  border: 3px solid #1d7441;
   cursor: pointer;
 }
 
@@ -1445,13 +1445,12 @@ main {
 /*END ABOUT---------------------------------------*/
 /*VIDEO SECTION------------------------------*/
 .video {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 60px;
 }
 
 @media (max-width: 1230px) {
   .video {
-    padding-top: calc(5px + (75) * ((100vw - 320px) / (910)));
+    padding-top: calc(5px + (55) * ((100vw - 320px) / (910)));
   }
 }
 
@@ -1501,7 +1500,7 @@ main {
 
 @media (max-width: 1230px) {
   .advantages {
-    margin-top: calc(10px + (80) * ((100vw - 320px) / (910)));
+    margin-top: calc(40px + (50) * ((100vw - 320px) / (910)));
   }
 }
 

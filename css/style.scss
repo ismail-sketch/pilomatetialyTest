@@ -348,7 +348,7 @@ main {
 .menu-catalog-btn {
   @media (any-hover: hover) {
     &:hover {
-      background-color: rgb(1, 144, 1);
+      background-color: #1d7441;
       color: #fff;
     }
 
@@ -428,7 +428,7 @@ main {
   font-size: 18px;
   align-items: center;
   justify-content: center;
-  border: 3px solid #019001;
+  border: 3px solid #1d7441;
   cursor: pointer;
 }
 // ///////////////////////////////////////////////////
@@ -986,9 +986,8 @@ main {
 
 /*VIDEO SECTION------------------------------*/
 .video {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  @include adaptiveAllCont('padding-top', 80, 5, 1230, 320);
+  padding-top: 60px;
+  @include adaptiveAllCont('padding-top', 60, 5, 1230, 320);
 
   &__title {
     font-size: 32px;
@@ -1022,7 +1021,7 @@ main {
 .advantages {
   margin-top: 90px;
   margin-bottom: 50px;
-  @include adaptiveAllCont('margin-top', 90, 10, 1230, 320);
+  @include adaptiveAllCont('margin-top', 90, 40, 1230, 320);
   &__wrp {
     display: flex;
     margin: 0 auto;
