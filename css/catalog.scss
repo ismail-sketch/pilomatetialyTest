@@ -668,8 +668,31 @@ $orangeColor: #FFA41E;
             padding-top: 0;
         }
     }
+    .video-card {
+        display: flex;
+        column-gap: 50px;
+        @media (max-width: 950px) {
+            flex-direction: column-reverse;
+            row-gap: 10px;
+        }
+    }
+    .video-text {
+        padding: 40px 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.2;
+        @include adaptiveAllCont('font-size', 30, 20, 1230, 320);
+        @media (max-width: 950px) {
+            padding: 0;
+            padding-top: 20px;
+        }
+    }
     .video-card-page {
         padding: 40px 0;
+          @media (max-width: 950px) {
+            padding: 0;
+        }
         iframe {
             @include adaptiveAllCont('height', 370, 200, 590, 320);
             @media (max-width: 590px) {
